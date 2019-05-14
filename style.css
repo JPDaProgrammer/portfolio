@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0px;
+}
+
+html {
+    font-family: sans-serif;
+    color: aliceblue;
+    background-color: rgb(77, 75, 75);
+}
+
+
+/* Header section start */
+
+#header {
+    position: fixed;
+    width: 100%;
+    z-index:1;
+}
+
+
+
+
+#header-nav {
+    background: rgba(5, 5, 5, 0.753);
+
+    height: 70px;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 2.5vh;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    margin: 30px; 
+}
+
+a:hover {
+    color: rgb(46, 115, 219);
+    transform: scale(2);
+}
+
+/* Header section end */
+
+/* Home section start */
+
+#home {
+    height: 95vh;
+    padding-top: 7vh;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 2em;
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 60px;
+    color: aliceblue; 
+    text-shadow: 1px 1px 6px #ffffff;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+
+
+/* Home section end */
+
+.header {
+    font-size: 60px;
+    color: aliceblue; 
+    text-shadow: 1px 1px 6px #ffffff;  
+}
+
+/* About section start */
+
+#about {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    position: relative;
+    
+}
+
+
+/* About section end */
+/* Projects section start */
+
+#projects {
+    height: 75vh;
+    display: flex;
+    margin-top: 7vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(code.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Projects section end */
+
+/* Contact section start */
+
+#contact {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contact section end */
+
+/* Footer section start */
+
+#footer {
+    height: 10vh;
+    background: rgba(5, 5, 5, 0.753);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer section end */
